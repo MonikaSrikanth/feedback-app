@@ -46,7 +46,7 @@ function App() {
         }}
       >
         <h1 style={{ textAlign: "center", fontSize: "2.5rem", marginBottom: "1.5rem" }}>
-          Feedback Form
+            Message me!
         </h1>
 
         <label style={{ fontSize: "1.2rem", display: "block", marginBottom: "0.5rem" }}>
