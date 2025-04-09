@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-
+const apiUrl = process.env.REACT_APP_API_URL;
 function App() {
   const [name, setName] = useState("");
   //const [feedback, setFeedback] = useState("");
@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/api/feedback", {
+    const response = await fetch(`${apiUrl}/api/feedback`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
