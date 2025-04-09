@@ -9,7 +9,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(`${apiUrl}/api/feedback`, {
+    const response = await fetch("https://feedback-app-w6g7.onrender.com/api/feedback", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
